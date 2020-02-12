@@ -1,0 +1,128 @@
+body {
+    color: rgb(18, 69, 110);
+}
+
+
+.btn-cari {
+    background-color: #E45865;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 70px;
+}
+.btn-cari:hover {
+    background-color: rgb(240, 71, 88);
+    color: white;
+}
+
+.text-color-Headerlogin {
+    color: #E45865;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.text-color-Headerlogin:hover {
+    text-decoration: none;
+    color: rgb(245, 28, 50);
+}
+
+.text-color-Headerfitur {
+    color:#E45865;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.text-color-Headerfitur:hover {
+    text-decoration: none;
+    color: rgb(245, 28, 50);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.btn-simulasi {
+    background-color: #FBD06B;
+    color: white;
+    border: none;
+    width:117px;
+    height: 37.5px;
+    text-shadow: black;
+}
+
+.garis1 {
+    margin-left: 50px;
+    width:120px;
+    height: 40px;
+    background-color: #E45865;
+    border: none;
+
+}
+
+.huruf-simulasi {
+    margin-left: 65px;
+}
+
+.garis2{
+    margin-top: -10px;
+    margin-left: 100px;
+    width:360px;
+    height: 2px;
+    background-color: #39566E;
+    border: none;
+
+}
+
+.product-text {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: rgb(18, 69, 110);
+}
+
+.garis3{
+    margin-top: -10px;
+    margin-left: 65px;
+    width:85px;
+    height: 1.5px;
+    background-color: #39566E;
+    border: none;
+
+
+}
+
+#indonesia {
+    font-size: 14px;
+}
+
+.navbarLogin {
+    background-color: #E45865;
+    width: 100px;
+}
+
+.btn-login {
+    background-color: #E45865;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.btn-registrasi {
+    background-color: #E45865;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.btn-sendPassword {
+    background-color: #E45865;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+}
