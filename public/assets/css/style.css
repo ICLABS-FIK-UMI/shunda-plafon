@@ -264,10 +264,15 @@ body {
 
 .footer-content .row .col-10 p{
     font-size: 20px;
+    margin-left: 10px;;
 }
 
 .footer-content .row .col-sm-12 p{
     text-align: center;
+}
+
+.join {
+    display: inline-block;
 }
 
 

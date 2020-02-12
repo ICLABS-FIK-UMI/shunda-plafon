@@ -7,6 +7,11 @@
                         <div class="col-10">
                             <img src="{{('assets/image/logo.png')}}" width="250"  class="d-inline-block align-top" alt=""> 
                                 <p>Ikuti Kami di</p>
+                                    <div class="join">
+                                        <img src="{{('assets/image/twitter.png')}}" width="50" height="45"  class="d-inline-block align-top" alt="">
+                                        <img src="{{('assets/image/fb.png')}}" width="50" height="45"  class="d-inline-block align-top" alt="">
+                                        <img src="{{('assets/image/youtube.png')}}" width="50" height="45"  class="d-inline-block align-top" alt="">
+                                    </div>   
                         </div>
                         <div class="footer-content1">
                             <div class="col-2">

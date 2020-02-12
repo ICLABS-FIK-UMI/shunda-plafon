@@ -52,7 +52,7 @@
       <!-- line Header -->
       <br>
       <nav class="navbar navbar-light bg-white">
-        <img src="{{('assets/image/line.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
+        <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
     </nav>
 
     <div class="row">
@@ -104,7 +104,7 @@
              <!-- line Header -->
             <br>
                 <nav class="navbar navbar-light bg-white">
-                    <img src="{{('assets/image/line.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
+                    <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
                 </nav>
                 <div class="row">
                     <div class="col-sm-12">
