@@ -7,6 +7,7 @@
     <title>Shunda Plafon </title>
     <link rel="stylesheet" href="{{('/assets/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{('/assets/css/style.css')}}">
+    <link rel="shortcut icon" href="{{('/assets/image/logo.png')}}">
 </head>
 <body>
 
@@ -22,6 +23,12 @@
     <div class="footer">
         @include('homepage.footer')
     </div>
+
+    <div>
+    </div>
+
+
+
   
 <script src="{{('/assets/js/bootstrap.js')}}"></script>
 </body>

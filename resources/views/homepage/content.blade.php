@@ -119,27 +119,27 @@
             
                         <div class="layanan">
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/1.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center> 
+                                <center><img src="{{('assets/image/1.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center> 
                                 <p>Pengantaran</p>
                             </div>
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/2.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/2.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
                                 <p>Perakitan</p> 
                             </div>
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/3.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/3.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
                                 <p>Pembayaran</p> 
                             </div>
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/4.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/4.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
                                 <p>Cara Beli</p> 
                             </div>
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/5.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/5.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
                                  <p>Hubungi Kami</p>
                             </div>
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/6.png')}}"  height="60" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/6.png')}}"  height="55" width="60" class="d-inline-block align-top" alt=""></center>
                                 <p>Pertanyaan</p> 
                             </div>
                                 
