@@ -1,5 +1,5 @@
 
-<div>
+<div class="container-fluid">
     <!-- NavBar Header -->
    <nav class="navbar navbar-light bg-white">
         <a class="navbar-brand" id="indonesia" href="#">
