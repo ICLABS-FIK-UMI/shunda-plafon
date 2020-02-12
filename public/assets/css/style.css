@@ -80,6 +80,16 @@ body {
     color: rgb(18, 69, 110);
 }
 
+.product-garis{
+    margin-top: -10px;
+    margin-left: 95px;
+    width:85px;
+    height: 1.5px;
+    background-color: #39566E;
+    border: none;
+
+}
+
 .product{
     background-color:#E45865;
     margin-left: 70px;
@@ -98,16 +108,7 @@ body {
     border-style: none;
 }
 
-.garis3{
-    margin-top: -10px;
-    margin-left: 95px;
-    width:85px;
-    height: 1.5px;
-    background-color: #39566E;
-    border: none;
 
-
-}
 
 #indonesia {
     font-size: 14px;
@@ -145,6 +146,23 @@ body {
     border-radius: 4px;
 }
 
+
+.category-text {
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgb(18, 69, 110);
+}
+
+.category-garis{
+    margin-top: -10px;
+    margin-left: 50px;
+    width:85px;
+    height: 1.5px;
+    background-color: #39566E;
+    border: none;
+
+}
+
 .category {
     background-color:#FBD06B;
     width: 100%;
@@ -154,4 +172,76 @@ body {
     border-bottom-left-radius: 60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.075);
 }
+
+.warna-motif-text {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 70px;
+    color: rgb(18, 69, 110);
+}
+
+.warna-motif-garis {
+    margin-top: -10px;
+    margin-left: 120px;
+    width:180px;
+    height: 2px;
+    background-color: #39566E;
+    border: none;
+}
+
+.warna-motif{
+    background-color:#ffffff;
+    margin-left: 70px;
+    width: 90%;
+    height: 250px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.050), 0 0px 0px 0 rgba(0, 0, 0, 0.050);
+    border-style: none;
+}
+
+.warna-motif-content {
+    background-color:#FBD06B;
+    margin-left: 50px;
+    margin-top: 30px;
+    display: inline-block;
+    width:15%;
+    height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.075);
+}
+
+.layanan-text {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 70px;
+    color: rgb(18, 69, 110);
+}
+
+.layanan-garis {
+    margin-top: -10px;
+    margin-left: 120px;
+    width:180px;
+    height: 2px;
+    background-color: #39566E;
+    border: none;
+}
+
+.layanan{
+    background-color:#ffffff;
+    margin-left: 70px;
+    width: 90%;
+    height: 250px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.050), 0 0px 0px 0 rgba(0, 0, 0, 0.050);
+    border-style: none;
+}
+
+.layanan-content {
+    margin-left: 107px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
 

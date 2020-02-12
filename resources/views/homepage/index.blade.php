@@ -20,7 +20,7 @@
     </div>
 
     <div class="footer">
-
+        @include('homepage.footer')
     </div>
   
 <script src="{{('/assets/js/bootstrap.js')}}"></script>
