@@ -13,26 +13,40 @@
             </nav>
             <br>
             <div class="product">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
-                      </div>
+                                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="{{('assets/image/imgslading.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
+                    <div class="text">Caption Text</div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="{{('assets/image/imgslading2.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
+                    <div class="text">Caption Two</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="{{('assets/image/imgslading3.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
+                        <div class="text">Caption Two</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div> 
             </div>
         </div>
         <div class="col-2">
@@ -67,7 +81,7 @@
             <br>
 
             <div class="warna-motif">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carausel-main" class="carousel slide" data-ride="carousel" data-interval="5000">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
@@ -90,11 +104,11 @@
 
                     </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href=".carousel" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href=".carousel" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
