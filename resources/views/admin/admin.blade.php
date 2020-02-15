@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Admin Shunda Plafon</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -31,22 +31,22 @@
 <div class="wrapper">
 
   <!-- Navbar Header -->
-      @include('admin/header')
+      @include('templating/header')
   <!-- Close Navbar Header -->
 
 
   <!-- Main Sidebar Container -->
-      @include('admin/sidebar')
+      @include('templating/sidebar')
   <!-- Close Sidebar -->
 
 
   <!-- Content Wrapper. Contains page content -->
-      @include('admin/content')
+      @include('templating/content')
   <!-- Close content-wrapper -->
 
 
   <!-- Footer -->
-      @include('admin/footer')
+      @include('templating/footer')
   <!-- Close Footer -->
   
 
