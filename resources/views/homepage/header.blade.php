@@ -33,7 +33,7 @@
     <!-- button header -->
     <nav class="navbar navbar-light bg-white">
         <div class="garis1">       
-             <button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button>
+             <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
         </div>
         <br>      
     </nav>

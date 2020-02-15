@@ -27,3 +27,6 @@ Route::get('/','IndexController@index');
 
 /* Route User */
 // Route::get('/','UserController@index');
+
+/* Route Simulasi */
+Route::get('/simulasi','SimulasiController@index')->name('simulasi');
