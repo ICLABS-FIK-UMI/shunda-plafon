@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 /* Route HomePage */
-Route::get('/','IndexController@index');
+// Route::get('/','IndexController@index');
 
 // /* Route Admin */
-// Route::get('/','AdminController@index');
+Route::get('/','AdminController@index');
