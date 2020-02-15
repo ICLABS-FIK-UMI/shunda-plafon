@@ -1,4 +1,16 @@
+    <!-- button header -->
+    <nav class="navbar navbar-light bg-white">
+        <div class="garis1">       
+             <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
+        </div>
+        <br>      
+    </nav>
+        <div>
+            <p class="huruf-simulasi">Simulasikan produk sesuai kebutuhan dan keinginan</p>
+        </div>
+        <div class="garis2"></div>
 
+    <!-- Close button header -->
 
 <div class="container-fluid">
 
