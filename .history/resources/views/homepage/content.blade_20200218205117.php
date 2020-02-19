@@ -1,7 +1,7 @@
     <!-- button header -->
     <nav class="navbar navbar-light bg-white">
         <div class="garis1">
-                 <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
+             <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
         </div>
         <br>
     </nav>
@@ -31,7 +31,7 @@
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="{{('assets/image/imgslading.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
+                    <img src="{{('assets/image/imgslading.JPG')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
                     <div class="text">Caption Text</div>
                     </div>
 
@@ -162,7 +162,7 @@
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/5.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Hubungi Kami</p>
+                                 <p>Hubungi Kami</p>
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/6.png')}}"  height="55" width="60" class="d-inline-block align-top" alt=""></center>

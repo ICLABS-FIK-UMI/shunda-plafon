@@ -42,7 +42,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{route('admin.mainslider')}}" class="nav-link">
+              <a href="pages/forms/general.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Main Slider</p>
               </a>
@@ -50,7 +50,7 @@
             <li class="nav-item">
               <a href="pages/forms/advanced.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Secondary Slider</p>
+                <p>Advanced Elements</p>
               </a>
             </li>
             <li class="nav-item">

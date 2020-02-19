@@ -19,11 +19,10 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware' => ['admin']],function (){
-    // Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::get('/admin', 'AdminController@index')->name('admin');
     Route::get('/admin/mainslider','AdminController@mainslider')->name('admin.mainslider');
 });
 
-Route::get('/admin', 'AdminController@index')->name('admin');
 /* Route HomePage */
 Route::get('/','IndexController@index');
 

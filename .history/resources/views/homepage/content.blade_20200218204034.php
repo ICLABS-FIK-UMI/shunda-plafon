@@ -1,9 +1,9 @@
     <!-- button header -->
     <nav class="navbar navbar-light bg-white">
-        <div class="garis1">
-                 <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
+        <div class="garis1">       
+             <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
         </div>
-        <br>
+        <br>      
     </nav>
         <div>
             <p class="huruf-simulasi">Simulasikan produk sesuai kebutuhan dan keinginan</p>
@@ -34,31 +34,31 @@
                     <img src="{{('assets/image/imgslading.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
                     <div class="text">Caption Text</div>
                     </div>
-
+                
                     <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="{{('assets/image/imgslading2.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
                     <div class="text">Caption Two</div>
                     </div>
-
+                
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
                         <img src="{{('assets/image/imgslading3.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
                         <div class="text">Caption Two</div>
                     </div>
-
+                
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
-
+                
                 <!-- The dots/circles -->
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
+                </div> 
             </div>
         </div>
         <div class="col-2">
@@ -71,14 +71,14 @@
             </nav>
             <br>
             <div class="category">
-
-            </div>
+               
+            </div> 
         </div>
-    </div>
+    </div> 
       <!-- line Header -->
       <br>
       <nav class="navbar navbar-light bg-white">
-        <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt="">
+        <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
     </nav>
 
     <div class="row">
@@ -130,7 +130,7 @@
              <!-- line Header -->
             <br>
                 <nav class="navbar navbar-light bg-white">
-                    <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt="">
+                    <img src="{{('assets/image/line1.png')}}"  height="6" width="100%" class="d-inline-block align-top" alt=""> 
                 </nav>
                 <div class="row">
                     <div class="col-sm-12">
@@ -142,33 +142,33 @@
                             </div>
                         </nav>
                         <br>
-
+            
                         <div class="layanan">
                             <div class="layanan-content">
-                                <center><img src="{{('assets/image/1.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
+                                <center><img src="{{('assets/image/1.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center> 
                                 <p>Pengantaran</p>
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/2.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Perakitan</p>
+                                <p>Perakitan</p> 
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/3.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Pembayaran</p>
+                                <p>Pembayaran</p> 
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/4.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Cara Beli</p>
+                                <p>Cara Beli</p> 
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/5.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Hubungi Kami</p>
+                                 <p>Hubungi Kami</p>
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/6.png')}}"  height="55" width="60" class="d-inline-block align-top" alt=""></center>
-                                <p>Pertanyaan</p>
+                                <p>Pertanyaan</p> 
                             </div>
-
+                                
                         </div>
                         <br>
                         <br>

@@ -1,7 +1,7 @@
     <!-- button header -->
     <nav class="navbar navbar-light bg-white">
         <div class="garis1">
-                 <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
+             <a href="{{route('simulasi')}}"><button class="btn-simulasi my-2 my-sm-0 " type="submit">Simulasi</button></a>
         </div>
         <br>
     </nav>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/5.png')}}"  height="55" width="65" class="d-inline-block align-top" alt=""></center>
-                                <p>Hubungi Kami</p>
+                                 <p>Hubungi Kami</p>
                             </div>
                             <div class="layanan-content">
                                 <center><img src="{{('assets/image/6.png')}}"  height="55" width="60" class="d-inline-block align-top" alt=""></center>

@@ -36,21 +36,21 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-edit"></i>
             <p>
-              Landing Page
+              Forms
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{route('admin.mainslider')}}" class="nav-link">
+              <a href="pages/forms/general.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Main Slider</p>
+                <p>General Elements</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="pages/forms/advanced.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Secondary Slider</p>
+                <p>Advanced Elements</p>
               </a>
             </li>
             <li class="nav-item">
@@ -90,7 +90,7 @@
             </li>
           </ul>
         </li>
-
+       
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

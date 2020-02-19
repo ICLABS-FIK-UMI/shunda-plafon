@@ -42,7 +42,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{route('admin.mainslider')}}" class="nav-link">
+              <a href="pages/forms/general.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Main Slider</p>
               </a>
