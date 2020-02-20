@@ -47,5 +47,5 @@ class User extends Authenticatable
     {
         if($this->id_role == 3) return true;
         return false;
-    }
+    };
 }

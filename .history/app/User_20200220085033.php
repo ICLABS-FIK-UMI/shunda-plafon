@@ -43,7 +43,7 @@ class User extends Authenticatable
         return false;
     }
 
-    public function isUser()
+    public function isAdmin()
     {
         if($this->id_role == 3) return true;
         return false;

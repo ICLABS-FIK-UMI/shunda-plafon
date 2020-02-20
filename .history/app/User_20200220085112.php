@@ -41,11 +41,11 @@ class User extends Authenticatable
     {
         if($this->id_role == 1) return true;
         return false;
-    }
+    };
 
     public function isUser()
     {
         if($this->id_role == 3) return true;
         return false;
-    }
+    };
 }

@@ -119,11 +119,11 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        if($user->id_role==1){
-            return redirect('/admin');
+        if($user->role==3){
+            return redirect()->route('admin');
         }
-        else if($user->id_role==3){
-            return redirect('/');
+        else if($user->role==2){
+            return redirect('/asisten');
         }
         else{
             return abort(404);
