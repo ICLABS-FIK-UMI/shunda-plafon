@@ -33,20 +33,17 @@
                 </tr>
                 </thead>
                 <tbody>
-
-                    @foreach ($mnslider as $slider)
-                    <tr>
-                    <td><img width="100px" src="{{('/mainslider/'.$slider->url)}}" alt="err"></td>
-                    <td>{{$slider->url}}</td>
-                    <td>{{$slider->caption}}</td>
-                    <td>
-                        <a href="">hapus</a>
-                        <a href="">edit</a>
-                    </td>
-                    </tr
+                <tr>
+                    @foreach ($nmslider as $slider)
+                <td><img src="{{(/'mainslider/'.{{$slider->url}})}}" alt="err"></td>
                     @endforeach
-                {{-- <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td> --}}
-
+                <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td>
+                <td>/assets/image/indonesia.png</td>
+                <td>caption 1</td>
+                <td>
+                    <a href="">hapus</a>
+                    <a href="">edit</a>
+                </td>
                 </tr>
                 </tbody>
                 <tfoot>

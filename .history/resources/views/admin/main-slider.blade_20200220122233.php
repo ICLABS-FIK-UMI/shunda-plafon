@@ -33,20 +33,14 @@
                 </tr>
                 </thead>
                 <tbody>
-
-                    @foreach ($mnslider as $slider)
-                    <tr>
-                    <td><img width="100px" src="{{('/mainslider/'.$slider->url)}}" alt="err"></td>
-                    <td>{{$slider->url}}</td>
-                    <td>{{$slider->caption}}</td>
-                    <td>
-                        <a href="">hapus</a>
-                        <a href="">edit</a>
-                    </td>
-                    </tr
-                    @endforeach
-                {{-- <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td> --}}
-
+                <tr>
+                <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td>
+                <td>/assets/image/indonesia.png</td>
+                <td>caption 1</td>
+                <td>
+                    <a href="">hapus</a>
+                    <a href="">edit</a>
+                </td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -75,21 +69,21 @@
           </button>
         </div>
         <div class="modal-body">
-            <form method="post" action="{{route('admin.mainslider.store')}}" enctype="multipart/form-data">
+            <form method="post" action="{{route('')}}">
                 @csrf
                 <div class="form-group">
                     <label for="my-input">Caption</label>
-                    <input id="my-input" class="form-control" type="text" name="caption">
+                    <input id="my-input" class="form-control" type="text" name="">
                 </div>
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input id="image" class="form-control-file" type="file" name="image">
+                    <input id="image" class="form-control-file" type="file" name="">
                 </div>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
         </form>
       </div>

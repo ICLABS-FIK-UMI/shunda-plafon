@@ -14,8 +14,7 @@ class AdminMainSliderController extends Controller
      */
     public function index()
     {
-        $mnslider = MainSLider::all();
-        return view('admin.main-slider',compact('mnslider'));
+        return view('admin.main-slider');
     }
 
     /**
@@ -36,13 +35,14 @@ class AdminMainSliderController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->file('image');
         MainSlider::create([
-            'caption'=>$request->caption,
-            'url'=>$path->getClientOriginalName(),
+            'caption'=>$request->caption;
+            'url'=>$request->file('image');
         ]);
+        $path = $request->file('image');
         $path->move('mainslider',$path->getClientOriginalName());
-        return redirect()->route('admin.mainslider');
+        dd($path);
+        return $path;
     }
 
     /**

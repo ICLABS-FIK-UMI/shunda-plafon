@@ -14,8 +14,7 @@ class AdminMainSliderController extends Controller
      */
     public function index()
     {
-        $mnslider = MainSLider::all();
-        return view('admin.main-slider',compact('mnslider'));
+        return view('admin.main-slider');
     }
 
     /**
@@ -41,8 +40,10 @@ class AdminMainSliderController extends Controller
             'caption'=>$request->caption,
             'url'=>$path->getClientOriginalName(),
         ]);
+
         $path->move('mainslider',$path->getClientOriginalName());
-        return redirect()->route('admin.mainslider');
+        dd($path);
+        return $path;
     }
 
     /**

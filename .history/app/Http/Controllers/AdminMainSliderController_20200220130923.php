@@ -14,8 +14,9 @@ class AdminMainSliderController extends Controller
      */
     public function index()
     {
-        $mnslider = MainSLider::all();
-        return view('admin.main-slider',compact('mnslider'));
+        $mnslider = MainSLider::get();
+        dd($mnslider)
+        return view('admin.main-slider');
     }
 
     /**

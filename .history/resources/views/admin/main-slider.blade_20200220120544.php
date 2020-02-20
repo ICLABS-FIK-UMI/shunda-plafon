@@ -19,7 +19,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <a href="" class="card-title" data-toggle="modal" data-target="#exampleModal">Add <i class="fas fa-plus"></i></a>
+              <a href="" class="card-title">Add <i class="fas fa-plus"></i></a>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -33,20 +33,14 @@
                 </tr>
                 </thead>
                 <tbody>
-
-                    @foreach ($mnslider as $slider)
-                    <tr>
-                    <td><img width="100px" src="{{('/mainslider/'.$slider->url)}}" alt="err"></td>
-                    <td>{{$slider->url}}</td>
-                    <td>{{$slider->caption}}</td>
-                    <td>
-                        <a href="">hapus</a>
-                        <a href="">edit</a>
-                    </td>
-                    </tr
-                    @endforeach
-                {{-- <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td> --}}
-
+                <tr>
+                <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td>
+                <td>/assets/image/indonesia.png</td>
+                <td>caption 1</td>
+                <td>
+                    <a href="">hapus</a>
+                    <a href="">edit</a>
+                </td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -64,34 +58,28 @@
     <!-- /.content -->
   </div>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Main Slider</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            <form method="post" action="{{route('admin.mainslider.store')}}" enctype="multipart/form-data">
-                @csrf
-                <div class="form-group">
-                    <label for="my-input">Caption</label>
-                    <input id="my-input" class="form-control" type="text" name="caption">
-                </div>
-                <div class="form-group">
-                    <label for="image">Image</label>
-                    <input id="image" class="form-control-file" type="file" name="image">
-                </div>
-
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
-        </form>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Storage;
+
 use App\Model\MainSlider;
 use Illuminate\Http\Request;
 
@@ -14,8 +14,7 @@ class AdminMainSliderController extends Controller
      */
     public function index()
     {
-        $mnslider = MainSLider::all();
-        return view('admin.main-slider',compact('mnslider'));
+        return view('admin.main-slider');
     }
 
     /**
@@ -36,13 +35,7 @@ class AdminMainSliderController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->file('image');
-        MainSlider::create([
-            'caption'=>$request->caption,
-            'url'=>$path->getClientOriginalName(),
-        ]);
-        $path->move('mainslider',$path->getClientOriginalName());
-        return redirect()->route('admin.mainslider');
+        dd($request->caption)
     }
 
     /**

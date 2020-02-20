@@ -35,7 +35,7 @@
                 <tbody>
 
                     @foreach ($mnslider as $slider)
-                    <tr>
+                    >
                     <td><img width="100px" src="{{('/mainslider/'.$slider->url)}}" alt="err"></td>
                     <td>{{$slider->url}}</td>
                     <td>{{$slider->caption}}</td>

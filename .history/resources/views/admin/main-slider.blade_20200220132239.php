@@ -43,7 +43,6 @@
                         <a href="">hapus</a>
                         <a href="">edit</a>
                     </td>
-                    </tr
                     @endforeach
                 {{-- <td><img src="{{('/assets/image/indonesia.png')}}" alt="s"></td> --}}
 
