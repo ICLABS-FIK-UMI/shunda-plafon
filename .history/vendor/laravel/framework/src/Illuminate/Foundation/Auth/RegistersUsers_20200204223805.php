@@ -57,14 +57,6 @@ trait RegistersUsers
      */
     protected function registered(Request $request, $user)
     {
-        if($user->id_role==1){
-            return redirect('/admin');
-        }
-        else if($user->id_role==3){
-            return redirect('/');
-        }
-        else{
-            return abort(404);
-        }
+        //
     }
 }
