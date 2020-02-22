@@ -6,8 +6,8 @@
             Indonesia<img src="{{('assets/image/indonesia.png')}}" width="20" height="15" class="d-inline-block align-top" alt="">
         </a>
         <div>
-            <a href="#" class="text-color-Headerfitur">Infomasi Toko</a> -
-            <a href="#" class="text-color-Headerfitur">Lacak Pengiriman</a> -
+            <a href="{{ url('/') }}" class="text-color-Headerfitur">Beranda</a> -
+            <a href="#" class="text-color-Headerfitur">Informasi Toko</a> -
             <a href="#" class="text-color-Headerfitur">Katalok</a>
         </div>
         <div>
