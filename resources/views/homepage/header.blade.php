@@ -12,7 +12,27 @@
         </div>
         <div>
             {{-- <a href="{{ route('login') }}" class="text-color-Headerlogin" >Login </a> - <a href="{{ route('register') }}" class="text-color-Headerlogin">Registrasi</a> --}}
+            @guest
+                <a href="{{ route('login') }}" class="text-color-Headerlogin" >Login </a> -
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="text-color-Headerlogin">Registrasi</a>
+                @endif
+                    @else
            
+                        <a href="#" class="text-color-Headerlogin">
+                            {{ Auth::user()->nm_user }} <span class="caret"></span>
+                        </a> -
+               
+                        <a class="text-color-Headerlogin" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+            @endguest
         </div>
     
     </nav>
