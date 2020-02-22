@@ -28,11 +28,54 @@
                         <br>
                         <div class="corakmotif">
                            <div class="corakmotif-content">
-                                <div class=" example-1 scrollbar-ripe-malinka thin">
+                                <div class=" example-1 scrollbar square scrollbar-lady-lips thin">
                                     <div class="card-body">
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit repellendus et sapiente. Ducimus perspiciatis excepturi repellat vero totam minima perferendis, sapiente laboriosam impedit quaerat cupiditate quam est illum? Magni, quidem?</p>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit repellendus et sapiente. Ducimus perspiciatis excepturi repellat vero totam minima perferendis, sapiente laboriosam impedit quaerat cupiditate quam est illum? Magni, quidem?</p>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit repellendus et sapiente. Ducimus perspiciatis excepturi repellat vero totam minima perferendis, sapiente laboriosam impedit quaerat cupiditate quam est illum? Magni, quidem?</p>
+                                        <div class="card-deck">
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/1.JPG')}}" width="40px" height="100px" alt="Card image cap">
+                                        
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/2.JPG')}}" width="40px" height="100px"  alt="Card image cap">
+                                             
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/3.JPG')}}" width="40px" height="100px" alt="Card image cap">
+                                             
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="card-deck">
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/4.JPG')}}" width="40px" height="100px" alt="Card image cap">
+                                        
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/5.JPG')}}" width="40px" height="100px" alt="Card image cap">
+                                             
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                            <div class="card">
+                                              <img class="card-img-top" src="{{('/corak_motif/6.JPG')}}" width="40px" height="100px" alt="Card image cap">
+                                             
+                                              <div class="card-footer">
+                                                <small class="text-muted">Last updated 3 mins ago</small>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                            </div>
