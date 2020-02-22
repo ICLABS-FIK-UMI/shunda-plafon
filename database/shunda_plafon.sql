@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 19 Feb 2020 pada 14.00
+-- Waktu pembuatan: 22 Feb 2020 pada 05.22
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -61,6 +61,30 @@ CREATE TABLE `item_type` (
   `id_type` int(11) NOT NULL,
   `nm_type` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `main_slider`
+--
+
+CREATE TABLE `main_slider` (
+  `id` int(11) NOT NULL,
+  `caption` text NOT NULL,
+  `url` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `slug` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `main_slider`
+--
+
+INSERT INTO `main_slider` (`id`, `caption`, `url`, `created_at`, `updated_at`, `slug`) VALUES
+(7, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'download.jpeg', '2020-02-21 19:47:13', '2020-02-21 19:47:13', 'lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum-4DWjWLlSQt'),
+(8, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'download (1).jpeg', '2020-02-21 19:47:27', '2020-02-21 19:47:27', 'lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum-v20tM99cDk'),
+(9, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Shunda_Plafon_PVC.jpg', '2020-02-21 19:47:37', '2020-02-21 19:47:37', 'lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum-1baRo16Fxo');
 
 -- --------------------------------------------------------
 
@@ -170,9 +194,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `id_role`, `nm_user`, `email`, `password`, `address`, `no_hp`, `updated_at`, `created_at`) VALUES
 (1, 1, 'admin', 'admin@admin', '$2y$10$3zMtuMne6lnvDxfUgI/4zOauUP12Mb274.wjJ2srBhMDbOUc9pBYC', '', '', '2020-02-18 14:11:32', '0000-00-00 00:00:00'),
-(2, 3, 'syawal', 'syawal20162016@gmail.com', '$2y$10$fcdHQ2QgdcrIzIG9yYQSF.1Ufmzl8NY5OB1Xqwf8gLbARW7CymVPG', '', '', '2020-02-18 06:16:27', '2020-02-18 06:16:27'),
 (3, 3, 'Alwi', 'alwi@gmail.com', '$2y$10$dgFnecuReEkv2Kzq/mesy.eP4ukYemeTYY5GrqDg0CqhT8Kg3SYkK', '', '', '2020-02-18 06:18:46', '2020-02-18 06:18:46'),
-(4, 3, 'fian', 'fian@gmail.com', '$2y$10$SRJwF9ojmBIrVKNT1bbQF.QTatMoVHeoGwnfDctoBxUxhV00eDsMq', '', '', '2020-02-19 04:16:40', '2020-02-19 04:16:40');
+(4, 3, 'fian', 'fian@gmail.com', '$2y$10$SRJwF9ojmBIrVKNT1bbQF.QTatMoVHeoGwnfDctoBxUxhV00eDsMq', '', '', '2020-02-19 04:16:40', '2020-02-19 04:16:40'),
+(6, 3, 'syawal', 'syawal20162016@gmail.com', '$2y$10$/a1Bg9ENWtjgFN2NCiyFSOUE613gSZYwg8RNP7SVMNUXCSkhS2RuS', '', '', '2020-02-19 19:33:09', '2020-02-19 19:33:09');
 
 --
 -- Indexes for dumped tables
@@ -199,6 +223,12 @@ ALTER TABLE `item`
 --
 ALTER TABLE `item_type`
   ADD PRIMARY KEY (`id_type`);
+
+--
+-- Indeks untuk tabel `main_slider`
+--
+ALTER TABLE `main_slider`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `model`
@@ -270,6 +300,12 @@ ALTER TABLE `item_type`
   MODIFY `id_type` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT untuk tabel `main_slider`
+--
+ALTER TABLE `main_slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT untuk tabel `model`
 --
 ALTER TABLE `model`
@@ -309,7 +345,7 @@ ALTER TABLE `transaction`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
