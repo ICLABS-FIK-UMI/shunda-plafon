@@ -16,7 +16,7 @@ class IndexController extends Controller
     public function index()
     {
         $mainSlider = MainSlider::get();
-        return view('homepage/index',compact('mainSlider'));
+        return view('homepage/index',compact($mainSlider));
     }
 
     /**

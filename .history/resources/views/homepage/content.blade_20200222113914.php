@@ -32,8 +32,8 @@
                     @foreach ($mainSlider as $slider)
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 3</div>
-                            <img src="{{('mainslider/'.$slider->url)}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
-                            <div class="text">{{$slider->caption}}</div>
+                            <img src="{{('assets/image/imgslading.jpg')}}" height="450px" width="100%" style="border-top-left-radius:20px; border-top-right-radius:20px; border-bottom-left-radius:20px; border-style:none;" alt="">
+                            <div class="text">Caption Text</div>
                         </div>
                     @endforeach
 
