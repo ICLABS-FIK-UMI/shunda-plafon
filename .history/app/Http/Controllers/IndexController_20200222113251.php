@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Model\MainSlider;
 
 class IndexController extends Controller
 {
@@ -15,8 +14,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $mainSlider = MainSlider::get();
-        return view('homepage/index',compact('mainSlider'));
+        MainSlider::get();
+        return view('homepage/index',compact());
     }
 
     /**
