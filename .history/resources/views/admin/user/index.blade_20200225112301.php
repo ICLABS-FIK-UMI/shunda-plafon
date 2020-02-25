@@ -1,12 +1,11 @@
 @extends('admin.base')
 @section('content')
 <div class="content-wrapper">
-
     <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Main Slider</h1>
+              <h1>User</h1>
             </div>
 
           </div>
@@ -26,23 +25,29 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                         <tr>
-                          <th>Gambar</th>
-                          <th>Url</th>
-                          <th>Caption</th>
+                          <th>No</th>
+                          <th>Nama User</th>
+                          <th>Email</th>
+                          <th>Alamat</th>
+                          <th>No HP</th>
                           <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
-                            @foreach ($mainSlider as $slider)
+                            <?php $no=1; ?>
+                            @foreach ($user as $users)
                             <tr>
-                                <td><img style="width: 100px" src="{{('/mainslider/'.$slider->url)}}" alt="err"></td>
-                                <td>{{$slider->url}}</td>
-                                <td>{{$slider->caption}}</td>
+                                <td>$no</td>
+                                <td>{{$users->nm_user}}</td>
+                                <td>{{$users->email}}</td>
+                                <td>{{$users->address}}</td>
+                                <td>{{$users->no_hp}}</td>
                                 <td>
-                                    <a href="{{route('admin.mainslider.destroy',$slider->slug)}}" type="button">hapus</a>
-                                    <a href="{{route('admin.mainslider.edit',$slider)}}">edit</a>
+                                    {{-- <a href="{{route('admin.user.destroy',$users->id)}}" type="button">hapus</a>
+                                    <a href="{{route('admin.user.edit',$users)}}">edit</a> --}}
                                 </td>
                             </tr>
+                            <?php $no++ ?>
                             @endforeach
                         </tbody>
                       </table>
@@ -65,15 +70,27 @@
               </button>
             </div>
             <div class="modal-body">
-                <form method="post" action="{{route('admin.mainslider.store')}}" enctype="multipart/form-data">
+                <form method="post" action="{{route('admin.user.store')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="my-input">Caption</label>
-                        <input id="my-input" class="form-control" type="text" name="caption">
+                        <label for="my-input">Nama User</label>
+                        <input id="my-input" class="form-control" type="text" name="nm_user">
                     </div>
                     <div class="form-group">
-                        <label for="image">Image</label>
-                        <input id="image" class="form-control-file" type="file" name="image">
+                        <label for="my-input">Email</label>
+                        <input id="my-input" class="form-control" type="text" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">Nama User</label>
+                        <input id="my-input" class="form-control" type="text" name="nm_user">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">Address</label>
+                        <input id="my-input" class="form-control" type="text" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="my-input">No Hp</label>
+                        <input id="my-input" class="form-control" type="text" name="no_hp">
                     </div>
 
             </div>
@@ -86,31 +103,5 @@
         </div>
       </div>
 </div>
-
-{{--
-<!-- jQuery -->
-<script src="{{('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{('/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- DataTables -->
-<script src="{{('/adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{('/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script src="{{('/adminlte/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{('/adminlte/dist/js/demo.js')}}"></script>
-  <script>
-    $(function () {
-      $("#example1").DataTable();
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": true,
-        "info": true,
-        "autoWidth": false,
-      });
-    });
-  </script> --}}
-
-
+</div>
 @endsection

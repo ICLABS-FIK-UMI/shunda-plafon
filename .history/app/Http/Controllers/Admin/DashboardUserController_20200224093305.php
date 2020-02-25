@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Model\DashboardUser;
 use Illuminate\Http\Request;
-use App\User;
-use Illuminate\Support\Facades\Hash;
 
-class UserController extends Controller
+
+class DashboardUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,13 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user/user');
-    }
-
-    public function DashboardUser()
-    {
-        $user = User::get();
-        return view('admin.user.index',compact('user'));
+        return view('user.index');
     }
 
     /**
@@ -43,25 +37,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        User::create([
-            'id_role'=>'3',
-            'nm_user'=>$request->nm_user,
-            'email' =>$request->email,
-            'password'=>Hash::make('12345678'),
-            'address'=>$request->address,
-            'no_hp'=>$request->no_hp
-        ]);
-
-        return back();
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Model\DashboardUser  $dashboardUser
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(DashboardUser $dashboardUser)
     {
         //
     }
@@ -69,10 +54,10 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Model\DashboardUser  $dashboardUser
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(DashboardUser $dashboardUser)
     {
         //
     }
@@ -81,10 +66,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Model\DashboardUser  $dashboardUser
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, DashboardUser $dashboardUser)
     {
         //
     }
@@ -92,12 +77,11 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Model\DashboardUser  $dashboardUser
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(DashboardUser $dashboardUser)
     {
-        User::find($id)->delete();
-        return back();
+        //
     }
 }

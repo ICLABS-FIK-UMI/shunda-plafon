@@ -62,7 +62,7 @@
           </ul>
         </li>
         <li class="nav-item">
-            <a href="{{route('admin.user')}}" class="nav-link">
+            <a href="pages/gallery.html" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 User

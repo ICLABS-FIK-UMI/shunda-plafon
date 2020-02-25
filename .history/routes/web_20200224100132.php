@@ -25,9 +25,7 @@ Route::group(['middleware' => ['admin']],function (){
     Route::get('/admin/mainslider/edit/{mainSlider}','AdminMainSliderController@edit')->name('admin.mainslider.edit');
     Route::post('/admin/mainslider/update/{mainSlider}','AdminMainSliderController@update')->name('admin.mainslider.update');
     Route::get('/admin/user', 'UserController@dashboardUser')->name('admin.user');
-    Route::post('/admin/user/store', 'UserController@store')->name('admin.user.store');
-    Route::get('/admin/user/destroy/{id}', 'UserController@destroy')->name('admin.user.destroy');
-
+    Route::post('/admin/user/store/{id}', 'AdminUserController@store')->name('admin.user.store');
 });
 
 // Route::get('/admin', 'AdminController@index')->name('admin');

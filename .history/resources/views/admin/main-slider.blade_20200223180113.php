@@ -1,19 +1,7 @@
 @extends('admin.base')
 @section('content')
 <div class="content-wrapper">
-
-    <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Main Slider</h1>
-            </div>
-
-          </div>
-        </div><!-- /.container-fluid -->
-    </section>
     <div class="container-fluid">
-
         <div class="row">
             <div class="col">
               <div class="card">
@@ -54,8 +42,7 @@
             </div>
             <!-- /.col -->
         </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -84,33 +71,8 @@
             </form>
           </div>
         </div>
-      </div>
+      </div>>
 </div>
-
-{{--
-<!-- jQuery -->
-<script src="{{('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{('/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- DataTables -->
-<script src="{{('/adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{('/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script src="{{('/adminlte/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{('/adminlte/dist/js/demo.js')}}"></script>
-  <script>
-    $(function () {
-      $("#example1").DataTable();
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": true,
-        "info": true,
-        "autoWidth": false,
-      });
-    });
-  </script> --}}
 
 
 @endsection

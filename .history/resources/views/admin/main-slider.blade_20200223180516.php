@@ -2,16 +2,7 @@
 @section('content')
 <div class="content-wrapper">
 
-    <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Main Slider</h1>
-            </div>
 
-          </div>
-        </div><!-- /.container-fluid -->
-    </section>
     <div class="container-fluid">
 
         <div class="row">
@@ -55,7 +46,7 @@
             <!-- /.col -->
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -84,10 +75,10 @@
             </form>
           </div>
         </div>
-      </div>
-</div>
+      </div>>
+</div> --}}
 
-{{--
+
 <!-- jQuery -->
 <script src="{{('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
@@ -110,7 +101,7 @@
         "autoWidth": false,
       });
     });
-  </script> --}}
+  </script>
 
 
 @endsection

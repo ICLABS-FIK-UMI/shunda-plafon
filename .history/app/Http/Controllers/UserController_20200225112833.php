@@ -51,8 +51,6 @@ class UserController extends Controller
             'address'=>$request->address,
             'no_hp'=>$request->no_hp
         ]);
-
-        return back();
     }
 
     /**
@@ -97,7 +95,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::find($id)->delete();
-        return back();
+        //
     }
 }

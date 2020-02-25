@@ -11,9 +11,8 @@
 
           </div>
         </div><!-- /.container-fluid -->
-    </section>
+      </section>
     <div class="container-fluid">
-
         <div class="row">
             <div class="col">
               <div class="card">
@@ -84,10 +83,10 @@
             </form>
           </div>
         </div>
-      </div>
+      </div>>
 </div>
 
-{{--
+
 <!-- jQuery -->
 <script src="{{('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
@@ -110,7 +109,7 @@
         "autoWidth": false,
       });
     });
-  </script> --}}
+  </script>
 
 
 @endsection

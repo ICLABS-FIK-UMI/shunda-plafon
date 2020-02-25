@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
-use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -43,16 +42,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        User::create([
-            'id_role'=>'3',
-            'nm_user'=>$request->nm_user,
-            'email' =>$request->email,
-            'password'=>Hash::make('12345678'),
-            'address'=>$request->address,
-            'no_hp'=>$request->no_hp
-        ]);
-
-        return back();
+        //
     }
 
     /**
@@ -97,7 +87,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::find($id)->delete();
-        return back();
+        //
     }
 }

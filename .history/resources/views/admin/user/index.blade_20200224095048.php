@@ -1,7 +1,6 @@
 @extends('admin.base')
 @section('content')
 <div class="content-wrapper">
-
     <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
@@ -86,31 +85,5 @@
         </div>
       </div>
 </div>
-
-{{--
-<!-- jQuery -->
-<script src="{{('/adminlte/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{('/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- DataTables -->
-<script src="{{('/adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{('/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
-<script src="{{('/adminlte/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{('/adminlte/dist/js/demo.js')}}"></script>
-  <script>
-    $(function () {
-      $("#example1").DataTable();
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": true,
-        "info": true,
-        "autoWidth": false,
-      });
-    });
-  </script> --}}
-
-
+</div>
 @endsection
