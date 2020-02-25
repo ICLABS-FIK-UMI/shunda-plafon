@@ -28,7 +28,7 @@ Route::group(['middleware' => ['admin']],function (){
     Route::post('/admin/user/store', 'UserController@store')->name('admin.user.store');
     Route::get('/admin/user/destroy/{id}', 'UserController@destroy')->name('admin.user.destroy');
     Route::get('/admin/user/edit/{user}','UserController@edit')->name('admin.user.edit');
-    route::post('/admin/user/update/{user}','UserController@update')->name('admin.user.update');
+    route::get('/admin/user/update/{user}','UserController$update')->name('admin.user.update');
 });
 
 // Route::get('/admin', 'AdminController@index')->name('admin');

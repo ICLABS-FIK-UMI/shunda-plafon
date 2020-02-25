@@ -87,15 +87,17 @@ class UserController extends Controller
      */
     public function update(User $user)
     {
+        request()->validate([
+
+        ]);
         $attr=request()->validate([
             'email'=>'',
-            'nm_user'=>'',
-            'address'=>'',
-            'no_hp'=>''
+            'nm_user'=>request()->nm_user,
+            'alamat'=>request()->alamat,
+            'no_hp'=>request()->no_hp
         ]);
 
         $user->update($attr);
-        return back();
     }
 
     /**

@@ -90,12 +90,11 @@ class UserController extends Controller
         $attr=request()->validate([
             'email'=>'',
             'nm_user'=>'',
-            'address'=>'',
-            'no_hp'=>''
+            'alamat'=>'',
+            'no_hp'=>
         ]);
 
         $user->update($attr);
-        return back();
     }
 
     /**

@@ -74,6 +74,10 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        // dd($user);
+        foreach ($user as $users) {
+            dd($users->id);
+        }
 
         return view('admin.user.edit',compact('user'));
     }
@@ -85,17 +89,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(User $user)
+    public function update(Request $request, $id)
     {
-        $attr=request()->validate([
-            'email'=>'',
-            'nm_user'=>'',
-            'address'=>'',
-            'no_hp'=>''
-        ]);
-
-        $user->update($attr);
-        return back();
+        //
     }
 
     /**

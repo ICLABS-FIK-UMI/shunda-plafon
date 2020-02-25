@@ -61,9 +61,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show($User, user)
     {
-
+        //
     }
 
     /**
@@ -72,10 +72,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit($id)
     {
-
-        return view('admin.user.edit',compact('user'));
+        //
     }
 
     /**
@@ -85,17 +84,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(User $user)
+    public function update(Request $request, $id)
     {
-        $attr=request()->validate([
-            'email'=>'',
-            'nm_user'=>'',
-            'address'=>'',
-            'no_hp'=>''
-        ]);
-
-        $user->update($attr);
-        return back();
+        //
     }
 
     /**
